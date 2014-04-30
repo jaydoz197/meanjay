@@ -7,29 +7,29 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 /**
- * Article Schema
+ * Poster Schema
  */
-var ArticleSchema = new Schema({
+var PosterSchema = new Schema({
 	created: {
 		type: Date,
 		default: Date.now
 	},
-	title: {
+	name: {
 		type: String,
 		default: '',
 		trim: true,
 		required: 'Name cannot be blank'
 	},
-	id: {
+	posterid: {
 		type: Number,
 		default: 0,
 		trim: true,
 		required: 'posterid no null'
 	},
-	user: {
+	site: {
 		type: Schema.ObjectId,
-		ref: 'User'
+		ref: 'Site'
 	}
 });
 
-mongoose.model('Article', ArticleSchema);
+mongoose.model('Poster', PosterSchema);

@@ -7,9 +7,9 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 /**
- * Article Schema
+ * Gallery Schema
  */
-var ArticleSchema = new Schema({
+var GallerySchema = new Schema({
 	created: {
 		type: Date,
 		default: Date.now
@@ -20,16 +20,25 @@ var ArticleSchema = new Schema({
 		trim: true,
 		required: 'Name cannot be blank'
 	},
-	id: {
+	galleryid: {
 		type: Number,
 		default: 0,
 		trim: true,
 		required: 'posterid no null'
 	},
-	user: {
+	poster: {
 		type: Schema.ObjectId,
-		ref: 'User'
+		ref: 'Poster'
+	},
+	url: {
+		type: String,
+		default: ''
+	},
+	prev: {
+		type: String,
+		default: ''
 	}
+	
 });
 
-mongoose.model('Article', ArticleSchema);
+mongoose.model('Gallery', GallerySchema);

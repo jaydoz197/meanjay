@@ -1,6 +1,8 @@
 'use strict';
 
 module.exports = {
+    port: '8001',
+    ipaddr: '0.0.0.0',
 	db: 'mongodb://localhost/mean2-dev',
 	app: {
 		title: 'mean2 - Development Environment'
