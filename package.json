@@ -51,7 +51,7 @@
     "karma-firefox-launcher": "~0.1.3",
     "karma-phantomjs-launcher": "~0.1.2"
   },
-  "subdomain": "mean2",
+  "subdomain": "meanjay",
   "domains": [
       "h.abuser.eu"
     ]
