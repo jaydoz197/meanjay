@@ -1,7 +1,7 @@
 {
   "name": "mean2",
   "description": "FullStack",
-  "version": "0.0.1-5",
+  "version": "0.0.1-6",
   "author": "Mk1",
   "engines": {
     "node": "0.10.x",
